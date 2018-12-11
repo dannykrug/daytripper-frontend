@@ -6,22 +6,35 @@
     <title>Daytripper</title>
   </head>
   <body>
-    <img src="images/daytripper-logo.png" alt="Daytripper">
+    <img id='logo' src="images/daytripper-logo.png" alt="Daytripper">
 
     <form id='login-form' class="" action="index.html" method="post">
+      <label for="">Login</label>
       <input id='username-field' type="text" name="username" placeholder='Enter Username'>
       <input id='email-field' type="text" name="email" placeholder="Enter Email">
       <input type="submit" value="Submit"/>
     </form>
 
-    <div id='user-div' class="">
+    <div style='visibility:hidden' id='user-div' class="">
 
     </div>
 
     <div class="split left">
 
     <div id='all-places' class="centered">
-      <h1>Browse Things to Do</h1>
+      <h1>Where Do You Want To Go?</h1>
+      <!-- <form id='search-form' class="" action="index.html" method="post">
+        <input id='search-field' type="text" name="place" value="" placeholder="Search for Places to Go">
+        <select id='location-field' class="" name="locations">
+          <option value="Brooklyn, New York">Brooklyn</option>
+          <option value="Bronx, New York">Bronx</option>
+          <option value="Manhattan, New York">Manhattan</option>
+          <option value="Queens, New York">Queens</option>
+          <option value="Staten Island, New York">Staten Island</option>
+        </select>
+        <input type="submit" name="" value="submit">
+
+      </form> -->
 
     </div>
 

@@ -4,15 +4,29 @@ body {
   background-color: #89e1ff;
 }
 
+#logo{
+  margin-left: 23%;
+}
+
+#login-form{
+  margin-left: 42%;
+}
+
 #day-list {
   background-color: #89ffbe;
-  top: 1;
-  overflow-x: hidden;
-  padding-top: 35px;
+  position: absolute;
+  top: 84px;
+  width: 450px;
+  height: 500px;
+  box-shadow: 10px 10px 5px #ff00d9;
+  border-radius: 10px;
+  text-align: center;
 }
 
 #all-places {
   width: 60%;
+  height: 650px;
+  overflow: scroll;
 
 }
 
@@ -21,9 +35,9 @@ body {
   width: 50%;
   position: fixed;
   z-index: 1;
-  top: 20;
+  top: 300px;
   overflow-x: hidden;
-  padding-top: 35px;
+  padding-top: 190px;
 }
 
 .left {
@@ -31,15 +45,18 @@ body {
   background-color: #89e1ff;
 }
 
+#day-list h1{
+  margin-left: -23px;
+}
+
 .right {
   right: 0;
-  background-color: #89ffbe;
+  background-color: #89e1ff;
 }
 
 .centered {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 35px;
+  left: 135px;
   text-align: center;
 }

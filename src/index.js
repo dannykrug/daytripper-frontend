@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const usernameField = document.getElementById('username-field')
   const emailField = document.getElementById('email-field')
   let currentUser = null
+  const searchForm = document.getElementById('search-form')
+  const searchField = document.getElementById('search-field')
+  const locationField = document.getElementById('location-field')
+  const yelpURL = 'https://api.yelp.com/v3/businesses/search'
+  const yelpKey = 'C-x_sT5fVGWeJLcB0wpHaz4bq_zyv-5dTpUlGedFHSCnZRliChGUnzQGKBSvHzeNNpTORuion9CsuES4rjRckkxue44GZ_9zBKO1kDed2pBv4LIUszbpjHCTDerNW3Yx'
+
 
   fetchPlaces()
   // fetchUsers ()
@@ -44,7 +50,23 @@ document.addEventListener('DOMContentLoaded', () => {
   //   users.forEach(showUser)
   // }
 
+  // searchForm.addEventListener('submit', fetchYelp)
+  //
+  // function fetchYelp(e){
+  //   e.preventDefault()
+  //   let searchParams = searchField.value
+  //   let location = locationField.value
+  //   fetch(`${yelpURL}?term=${searchParams}&location=${location}`,
+  //     {mode: 'no-cors',
+  //     headers: {
+  //   'Authorization': `Bearer ${yelpKey}`}
+  // })
+  //   .then(console.log)
+
+  // }
+
   function showUser(user) {
+    console.log(user)
 
     userDiv.innerHTML = ''
 
@@ -176,7 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
     //     currentUser = null
     //   }
     // })
+    clearForm()
+  }
 
+  function clearForm() {
+    usernameField.value = ''
+    emailField.value = ''
   }
 
 
